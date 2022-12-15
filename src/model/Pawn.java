@@ -7,11 +7,9 @@ public class Pawn extends Piece {
 	public Pawn(String img, Integer rown, Integer column, Color color) {
 		super(img, rown, column, color);
 	}
-
+	
 	@Override
-	public boolean validMove(int rowTarget, int colTarget) {
-		
-		
+	public boolean validMove(int targetRow, int targetCol) {
 		return true;
 	}
 

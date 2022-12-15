@@ -41,6 +41,5 @@ public abstract class Piece {
 	
 	// Movement Validation Method
 	public abstract boolean validMove(int rowTarget, int colTarget) {
-		return true;
 	}
 }
