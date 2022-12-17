@@ -2,7 +2,7 @@ package model;
 
 public abstract class Piece {
 	
-	private String img;
+	private String img; // Image
 	private Integer rown, column;
 	private Boolean eliminated = false;
 	private Boolean selected = false;
@@ -40,6 +40,6 @@ public abstract class Piece {
 	
 	
 	// Movement Validation Method
-	public abstract boolean validMove(int rowTarget, int colTarget) {
+	public boolean validMove(int rowTarget, int colTarget) {
 	}
 }
