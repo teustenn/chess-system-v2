@@ -6,7 +6,9 @@ public abstract class Piece {
 	private Integer rown, column;
 	private Boolean eliminated = false;
 	private Boolean selected = false;
+	
 	private Color color;
+	private Board board;
 	
 	
 	// Constructor
@@ -39,6 +41,26 @@ public abstract class Piece {
 	}
 	
 	
+	public Board getBoard() {
+		return board;
+	}
+
+
+	public void setBoard(Board board) {
+		this.board = board;
+	}
+	
+
+	public Boolean isSelected() {
+		return selected;
+	}
+
+
+	public void setSelected(Boolean selected) {
+		this.selected = selected;
+	}
+
+
 	// Movement Validation Method
 	public boolean validMove(int rowTarget, int colTarget) {
 	}
