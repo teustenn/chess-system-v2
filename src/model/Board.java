@@ -10,8 +10,8 @@ public class Board {
 	public static final int MOVETIME = 10000;
 	
 	
-	public Board(int rows, int columns) {
-		this.pieces = new Piece[rows][columns];
+	public Board() {
+		this.pieces = new Piece[8][8];
 	}
 	
 	
@@ -22,7 +22,7 @@ public class Board {
 	
 	// Add a Piece on the Board
 	public void addPiece(Piece piece) {
-		this.pieces[piece.getRown()][piece.getColumn()] = piece;
+		this.pieces[piece.getRow()][piece.getColumn()] = piece;
 		piece.setBoard(this);
 	}
 

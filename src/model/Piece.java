@@ -3,7 +3,7 @@ package model;
 public abstract class Piece {
 	
 	private String img; // Image
-	private Integer rown, column;
+	private Integer row, column;
 	private Boolean eliminated = false;
 	private Boolean selected = false;
 	
@@ -14,20 +14,20 @@ public abstract class Piece {
 	// Constructor
 	public Piece(String img, Integer rown, Integer column, Color color) {
 		this.img = img;
-		this.rown = rown;
+		this.row = rown;
 		this.column = column;
 		this.color = color;
 	}
 	
 	
 	// Getters & Setters
-	public Integer getRown() {
-		return rown;
+	public Integer getRow() {
+		return row;
 	}
 
 
-	public void setRown(Integer rown) {
-		this.rown = rown;
+	public void setRow(Integer rown) {
+		this.row = rown;
 	}
 
 
@@ -62,6 +62,4 @@ public abstract class Piece {
 
 
 	// Movement Validation Method
-	public boolean validMove(int rowTarget, int colTarget) {
-	}
 }
