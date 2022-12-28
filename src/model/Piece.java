@@ -59,7 +59,15 @@ public abstract class Piece {
 	public void setSelected(Boolean selected) {
 		this.selected = selected;
 	}
+	
+	
+	public String getImg() {
+		return img;
+	}
 
 
 	// Movement Validation Method
+	public boolean validMove(int rowTarget, int colTarget) {
+		return false;
+	}
 }

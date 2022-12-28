@@ -7,6 +7,7 @@ import view.JBoard;
 
 public class JChess extends JFrame {
 	
+	
 	public JChess() {
 		setTitle("Chess Match");	
 		this.add(new JBoard(new Board()));
